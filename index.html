@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fun Gate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: #222;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    section {
+      padding: 60px 20px;
+    }
+    button {
+      padding: 15px 30px;
+      background: #ff5722;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e64a19;
+    }
+    .about {
+      background: #2c2c54;
+      border-radius: 10px;
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    footer {
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🎮 The Fun Gate 🎮</header>
+
+  <section id="games">
+    <h2>قسم الألعاب</h2>
+    <p>اضغط على الزر للانتقال إلى لعبة عشوائية.</p>
+    <button onclick="openRandomGame()">اضغط للعبة</button>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <h2>عن الموقع وصاحبه</h2>
+      <p>مرحبًا بكم في <strong>The Fun Gate</strong>، بوابتكم إلى عالم الترفيه والألعاب!</p>
+      <p>صاحب الموقع: <strong>يوسف السيد</strong> ✨</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 The Fun Gate - جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    function openRandomGame() {
+      const games = [
+        "https://www.crazygames.com",
+        "https://www.miniclip.com",
+        "https://poki.com",
+        "https://www.addictinggames.com",
+        "https://armorgames.com",
+        "https://www.kongregate.com",
+        "https://www.agame.com",
+        "https://www.freeonlinegames.com",
+        "https://y8.com",
+        "https://www.newgrounds.com/games"
+      ];
+      const randomIndex = Math.floor(Math.random() * games.length);
+      window.location.href = games[randomIndex];
+    }
+  </script>
+
+</body>
+  </html>
+  
